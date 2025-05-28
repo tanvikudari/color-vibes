@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const fullText = `Color Vibes is a small design utility that helps you discover aesthetic color palettes and music recommendations based on different moods. This fun little project was built using Next.js, React, and Tailwind CSS to demonstrate routing, styling, and interaction in a fun and creative way.`;
+const fullText = `Color vibes is a web application that allows users to generate color palettes and music vibes based on their mood. This project was built usong Next.js, React, and Tailwind CSS to . The fun little project is built with Next.js, React, and Tailwind CSS to demonstrate routing and interaction in a fun and creative way. The project is hosted on Vercel.`;
 
 export default function About() {
   const [displayedText, setDisplayedText] = useState('');
