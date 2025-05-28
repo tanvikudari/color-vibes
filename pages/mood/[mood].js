@@ -33,26 +33,26 @@ export default function MoodPage() {
   const moodSongs = songs[mood] || [];
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-white to-indigo-50 p-10 text-center text-gray-800">
-      <h1 className="text-3xl font-bold mb-4 capitalize">{mood} Mood Palette</h1>
+    <main className="min-h-screen bg-gradient-to-br from-white to-indigo-50 p-10 text-center text-gray-800 animate-fade-in">
+      <h1 className="text-3xl font-bold mb-4 capitalize animate-slide-in">{mood} Mood Palette</h1>
       <div className="flex justify-center flex-wrap gap-6">
         {colors.map((color, i) => (
-          <div key={i} className="w-32 h-32 rounded-xl shadow-lg relative" style={{ backgroundColor: color }}>
+          <div key={i} className="w-32 h-32 rounded-xl shadow-lg relative animate-fade-in" style={{ backgroundColor: color }}>
             <p className="absolute bottom-2 w-full text-white font-semibold drop-shadow-md text-sm">{color}</p>
           </div>
         ))}
       </div>
 
       <div className="mt-10">
-        <h2 className="text-xl font-semibold mb-4">Song Recommendations 🎵</h2>
+        <h2 className="text-xl font-semibold mb-4 animate-fade-in">Song Recommendations 🎵</h2>
         <ul className="space-y-2">
           {moodSongs.map((song, idx) => (
-            <li key={idx}>
+            <li key={idx} className="animate-fade-in delay-100">
               <a
                 href={song.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-600 hover:underline hover:text-blue-800"
+                className="text-indigo-600 hover:text-indigo-800 font-medium transition-colors underline-offset-2 hover:underline"
               >
                 {song.title}
               </a>
@@ -63,7 +63,7 @@ export default function MoodPage() {
 
       <div className="mt-12">
         <a href="/">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition transform hover:scale-105">← Back home</button>
+          <button className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-full hover:from-indigo-600 hover:to-purple-600 transition transform hover:scale-105 animate-pulse shadow-md">← Back home</button>
         </a>
       </div>
     </main>
