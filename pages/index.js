@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function Home() {
-  const moods = ['energetic', 'calm', 'romantic', 'mystical'];
+  const moods = ['energetic', 'calm', 'romantic', 'dreamy'];
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-purple-100 to-blue-50 p-10 text-center text-gray-800 animate-fade-in">
