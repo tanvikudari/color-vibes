@@ -10,28 +10,15 @@ export default function Home() {
       <div className="flex flex-wrap justify-center gap-6">
         {moods.map((mood) => (
           <Link key={mood} href={`/mood/${mood}`}>
-            <div
-              className="
-                bg-white shadow-md rounded-xl p-6 w-40 cursor-pointer
-                transform transition
-                hover:scale-110 hover:rotate-3
-                hover:shadow-[0_0_15px_rgba(99,102,241,0.6)]
-                hover:bg-indigo-200
-                animate-fade-in
-              "
-            >
-              <span className="capitalize font-semibold text-lg text-indigo-700 hover:text-indigo-900 transition-colors">
-                {mood}
-              </span>
+            <div className="bg-white shadow-md rounded-xl p-6 w-40 hover:scale-105 transition cursor-pointer hover:bg-indigo-200 animate-fade-in">
+              <span className="capitalize font-semibold text-lg text-indigo-700 hover:text-indigo-900 transition-colors">{mood}</span>
             </div>
           </Link>
         ))}
       </div>
       <div className="mt-12 text-sm">
         <Link href="/about">
-          <button className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-full hover:from-indigo-600 hover:to-purple-600 transition transform hover:scale-105 animate-pulse shadow-md">
-            About this project
-          </button>
+          <button className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-4 py-2 rounded-full hover:from-indigo-600 hover:to-purple-600 transition transform hover:scale-105 animate-pulse shadow-md">About this project</button>
         </Link>
       </div>
     </main>
