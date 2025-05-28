@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 const palettes = {
   energetic: ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF'],
@@ -16,11 +17,24 @@ export default function MoodPage() {
     <main className="min-h-screen bg-white p-10 text-center">
       <h1 className="text-3xl font-bold mb-4 capitalize">{mood} Mood Palette</h1>
       <div className="flex justify-center flex-wrap gap-6">
-        {colors.map((color, i) => (
-          <div key={i} className="w-32 h-32 rounded-xl shadow-lg" style={{ backgroundColor: color }}>
-            <p className="mt-36 text-white font-bold drop-shadow-md">{color}</p>
-          </div>
-        ))}
+      {colors.map((color, i) => (
+  <motion.div
+    key={i}
+    className="w-32 h-32 rounded-xl shadow-lg cursor-pointer"
+    style={{ backgroundColor: color }}
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: i * 0.1 }}
+    onClick={() => {
+      navigator.clipboard.writeText(color);
+      alert(`${color} copied!`);
+    }}
+    title="Click to copy"
+  >
+    <p className="mt-36 text-white font-bold drop-shadow-md">{color}</p>
+  </motion.div>
+))}
+
       </div>
       <div className="mt-12">
         <a href="/" className="underline text-blue-500">← Back home</a>

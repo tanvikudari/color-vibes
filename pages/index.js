@@ -11,7 +11,7 @@ export default function Home() {
       <div className="flex flex-wrap justify-center gap-6">
         {moods.map((mood) => (
           <Link key={mood} href={`/mood/${mood}`}>
-            <div className="bg-white shadow-md rounded-xl p-6 w-40 hover:scale-105 transition cursor-pointer">
+            <div className="bg-white shadow-md rounded-xl p-6 w-40 hover:scale-105 hover:shadow-indigo-300 transition duration-300 cursor-pointer">
               <span className="capitalize font-medium text-lg">{mood}</span>
             </div>
           </Link>
