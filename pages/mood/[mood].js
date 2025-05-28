@@ -4,7 +4,7 @@ const palettes = {
   energetic: ['#FF6B6B', '#FFD93D', '#6BCB77', '#4D96FF'],
   calm: ['#A3CEF1', '#E7F6F2', '#C0D6DF', '#B8B5FF'],
   romantic: ['#FFC1CC', '#FFB6B9', '#FAE1DD', '#FFE5E5'],
-  mystical: ['#8E44AD', '#6C5B7B', '#355C7D', '#34495E']
+  dreamy: ['#8E44AD', '#6C5B7B', '#355C7D', '#34495E']
 };
 
 const songs = {
