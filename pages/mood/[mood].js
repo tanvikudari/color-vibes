@@ -13,16 +13,16 @@ const songs = {
     { title: "Titanium – David Guetta", url: "https://open.spotify.com/track/1zB4vmk8tFRmM9UULNzbLB" }
   ],
   calm: [
-    { title: "Weightless – Marconi Union", url: "https://open.spotify.com/track/6JEK0CvvjDjjMUBFoXShNZ" },
-    { title: "Bloom – The Paper Kites", url: "https://open.spotify.com/track/3KR2yDtvE7HkWg0TbGE4jH" }
+    { title: "Weather Any Storm – Cody Francis", url: "https://open.spotify.com/track/0eaD3F5zUC3Bq8In11nkau?si=83078ee8609a4a2b" },
+    { title: "a little more time – Role Model", url: "https://open.spotify.com/track/5UhZyWfrSEhGYfIIFNYscF?si=4b570c63aa144966" }
   ],
   romantic: [
-    { title: "All of Me – John Legend", url: "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a" },
-    { title: "Perfect – Ed Sheeran", url: "https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v" }
+    { title: "Dreams from Bunker Hill – Cigarettes After Sex", url: "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a" },
+    { title: "Tum Jab Paas – Prateek Kuhad", url: "https://open.spotify.com/track/3FTRSa9mWB3kKx2jkhUAN3?si=06a53ba809df421a" }
   ],
-  mystical: [
-    { title: "Night Owl – Galimatias", url: "https://open.spotify.com/track/5Xuj3FPvHqMaLt7wVgK9cK" },
-    { title: "Oblivion – Grimes", url: "https://open.spotify.com/track/1y5NZCmRz6ZgDP6Fd6rWbW" }
+  dreamy: [
+    { title: "Snow on the Beach – Taylor Swift", url: "https://open.spotify.com/track/5Xuj3FPvHqMaLt7wVgK9cK" },
+    { title: "Space Song – Beach House", url: "https://open.spotify.com/track/1y5NZCmRz6ZgDP6Fd6rWbW" }
   ]
 };
 
